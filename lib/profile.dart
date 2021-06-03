@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:qr_scanner/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/FirstPage');
+                   Navigator.push(context, MaterialPageRoute(builder:(context) => HomeScreen()));
                   },
                   child: Text(
                     'BACK',

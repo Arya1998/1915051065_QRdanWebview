@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:barcode_scan/barcode_scan.dart';
-import 'profil.dart';
+import 'profile.dart';
 
 import 'webview_screen.dart';
 
@@ -57,7 +57,9 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(
             height: 10.0,
           ),
-          Image.network("https://i.ibb.co/PT2W3qZ/scan-barcode.png"),
+          Image.asset("images/qrscan.jpg",
+          height: 400,
+          width: 300,),
           SizedBox(
             height: 10.0,
           ),
