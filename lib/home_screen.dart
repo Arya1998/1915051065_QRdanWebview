@@ -24,22 +24,22 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.black45,
       appBar: AppBar(
-        leading: Icon(Icons.dashboard),
+        leading: Icon(Icons.announcement_outlined),
         title: Text("QR SCANNER"),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.person_outline),
+            icon: Icon(Icons.account_box_outlined),
             color: Colors.white,
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => MyApp()),
+                MaterialPageRoute(builder: (context) => MyProfile()),
               );
             },
           )
         ],
         centerTitle: true,
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.orange,
         elevation: 0.0,
       ),
       body: Column(
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 10,
             decoration: BoxDecoration(
-              color: Colors.blueAccent,
+              color: Colors.orange,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(16.0),
                 bottomRight: Radius.circular(16.0),
@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.all(10.0),
                 child: Center(
                   child: Text(
-                    "Scan!",
+                    "Scan QR",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w300,
@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.blueAccent[400],
+                color: Colors.lightBlue[400],
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
               ),
             ),
